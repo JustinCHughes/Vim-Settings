@@ -1,0 +1,62 @@
+// ISRT Custom Layout for Fedora Wayland
+default partial alphanumeric_keys
+xkb_symbols "basic" {
+
+    include "us(basic)"
+    name[Group1]= "English (ISRT)";
+
+    // Row 1 (Numbers) - Mostly standard but explicit
+    key <AE01> { [ 1, exclam ] };
+    key <AE02> { [ 2, at ] };
+    key <AE03> { [ 3, numbersign ] };
+    key <AE04> { [ 4, dollar ] };
+    key <AE05> { [ 5, percent ] };
+    key <AE06> { [ 6, asciicircum ] };
+    key <AE07> { [ 7, ampersand ] };
+    key <AE08> { [ 8, asterisk ] };
+    key <AE09> { [ 9, parenleft ] };
+    key <AE10> { [ 0, parenright ] };
+    key <AE11> { [ minus, underscore ] };
+    key <AE12> { [ equal, plus ] };
+
+    // Row 2 (Top Letters)
+    key <AD01> { [ y, Y ] }; // Q
+    key <AD02> { [ c, C ] }; // W
+    key <AD03> { [ l, L ] }; // E
+    key <AD04> { [ m, M ] }; // R
+    key <AD05> { [ k, K ] }; // T
+    key <AD06> { [ z, Z ] }; // Y
+    key <AD07> { [ f, F ] }; // U
+    key <AD08> { [ u, U ] }; // I
+    key <AD09> { [ comma, less ] }; // O
+    key <AD10> { [ apostrophe, quotedbl ] }; // P
+    key <AD11> { [ bracketleft, braceleft ] };
+    key <AD12> { [ bracketright, braceright ] };
+
+    // Row 3 (Home Row)
+    key <AC01> { [ i, I ] }; // A
+    key <AC02> { [ s, S ] }; // S
+    key <AC03> { [ r, R ] }; // D
+    key <AC04> { [ t, T ] }; // F
+    key <AC05> { [ g, G ] }; // G
+    key <AC06> { [ p, P ] }; // H
+    key <AC07> { [ n, N ] }; // J
+    key <AC08> { [ e, E ] }; // K
+    key <AC09> { [ a, A ] }; // L
+    key <AC10> { [ o, O ] }; // ;
+    key <AC11> { [ semicolon, colon ] }; // '
+
+    // Row 4 (Bottom Letters)
+    key <AB01> { [ v, V ] }; // Z
+    key <AB02> { [ w, W ] }; // X
+    key <AB03> { [ d, D ] }; // C
+    key <AB04> { [ j, J ] }; // V
+    key <AB05> { [ q, Q ] }; // B
+    key <AB06> { [ b, B ] }; // N
+    key <AB07> { [ h, H ] }; // M
+    key <AB08> { [ slash, question ] }; // ,
+    key <AB09> { [ period, greater ] }; // .
+    key <AB10> { [ x, X ] }; // /
+
+    key <BKSL> { [ backslash, bar ] };
+};
