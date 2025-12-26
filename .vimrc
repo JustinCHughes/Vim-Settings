@@ -1,4 +1,4 @@
-" --- Basic Settings ---
+"--- Basic Settings ---
 set nocompatible                " Required for Vim features to work
 set backspace=indent,eol,start  " Makes backspace behave reasonably
 set cindent                     " Smart auto-indenting
@@ -14,14 +14,10 @@ set ruler                       " Show the current cursor position
 set incsearch                   " Highlight matches as you type
 set hlsearch                    " Highlight all matches for current search
 
-" Map Caps Lock to escape
-nnoremap nn <Esc>
-
-" Change navigation mappings
-nnoremap <C-h> <C-w>p
-nnoremap <C-j> <C-w>n
-nnoremap <C-k> <C-w>e
-nnoremap <C-l> <C-w>a
+" Remap the exit
+inoremap nn <Esc>
+set timeout
+set timeoutlen=150
 
 " Clear highlighting
 nnoremap <space> :noh<cr>
